@@ -96,11 +96,10 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `⌥J`    | `↓` DownArrow  | mouse down              |
 | `⌥K`    | `↑` UpArrow    | mouse up                |
 | `⌥L`    | `→` RightArrow | mouse right             |
-| `⌃H`    | `←` LeftArrow  | expose all              |
-| `⌃J`    | `↓` DownArrow  | show desktops              |
-| `⌃K`    | `↑` UpArrow    | switch prev desktop               |
-| `⌃L`    | `→` RightArrow | switch next desktop        |
-
+| `⌃H`    | `←` LeftArrow  | switch prev desktop     |
+| `⌃J`    | `↓` DownArrow  | show desktops           |
+| `⌃K`    | `↑` UpArrow    | expose all              |
+| `⌃L`    | `→` RightArrow | switch next desktop     |
 
 
 ### Mousekey
@@ -135,11 +134,8 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `⌘⇥` Command+Tab | `⌘⇧⇥` Command+Shift+Tab | Switch Window Reversely                  |
 | `Q`              | `⌘Q`                    | Close Window                             |
 | `W`              | `⌘W`                    | Close Tab                                |
-| `A`              | `⌃⌥⇧⌘A`                 | Leaves to [Moom](https://manytricks.com/moom/), ※a window resize app |
-| `⌘A`             | `⌃↑`  Ctrl+UpArrow      | OSX Expose All                           |
 | `S`              | `⌃⇥`  Ctrl+Tab          | Switch Tab                               |
-| `⌘S`             | `⌃⇧⇥` Ctrl+Shift+Tab    | Swtich Tab Reversely                     |
-| `⌘D`             | `F11`                   | Show Desktop                             |
+| `D`             | `⌃⇧⇥` Ctrl+Shift+Tab    | Swtich Tab Reversely                     |
 
 ### Bash Control
 
@@ -152,7 +148,10 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `C`    | `⌃C`Ctrl+C  | SIGINT                                       |
 | `V`    | `⌃V`Ctrl+V  | Vim Prefix                                   |
 | `B`    | `⌃B`Ctrl+B  | [Tmux](http://tmux.github.io) Default Prefix |
-| `D`    | `⌃D` Ctrl+D | EOF                                          |
+| `⌘D`   | `⌃D` Ctrl+D | EOF                                          |
+| `f`    | `⌃f `Ctrl+f |                                   |
+| `a`    | `⌃a`Ctrl+a  |  |
+| `⌘s`   | `⌃s` Ctrl+s |                                        |
 
 #### Applications
 
@@ -160,16 +159,14 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 
 | Origin | Maps to                 | Comment                                         |
 | ------ | ----------------------- | ----------------------------------------------- |
-| `E`    | Open Safari             | Open Web Browser                                |
+| `E`    | Open alfred             | Open alfred                                     |
 | `⌘E`   | Open Finder             | Open File Browser                               |
 | `R`    | Open iTerm2             | Great terminal for osx (`Run`)                  |
 | `⌘R`   | Open Preview            | Switch to opened picture, pdf, etc...           |
-| `T`    | Open Visual Studio Code | Text Editor: Visual Studio Code                 |
-| `⌘T`   | Open Typora             | Text Editor: Typora , a great WYSIWYG md editor |
-| `⌘D`   | Open Dictionary         | Find words                                      |
-| `⌘F`   | Open Dash               | Find API Document                               |
-| `F`    | Open Alfred             | Leaves to `⌃⌥⇧⌘F`                               |
-| `G`    | Open Intellij IDEA      | Open IDE                                        |
+| `T`    | Open obsidian           | obsidian                                        |
+| `⌘T`   | Open todoist            | todoist                                        |
+| `⌘F`   | Open onedrive           | Find onedrive                                   |
+| `G`    | Open 企业微信             |                                     |
 | `⌘G`   | Open Chrome             | Google Chrome                                   |
 
 ### Functional
