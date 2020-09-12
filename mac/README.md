@@ -48,6 +48,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 
 
 
+
 ## Usage (mac)
 
 ![](../images/keyboard.png)
@@ -83,10 +84,10 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `⌘J`   | `⇧↓` DownArrow  | cursor down and selection  |
 | `⌘K`   | `⇧↑` UpArrow    | cursor up and selection    |
 | `⌘L`   | `⇧→` RightArrow | cursor right and selection |
-| `⌥H`   | `←` LeftArrow   | mouse left                 |
-| `⌥J`   | `↓` DownArrow   | mouse down                 |
-| `⌥K`   | `↑` UpArrow     | mouse up                   |
-| `⌥L`   | `→` RightArrow  | mouse right                |
+| `G+H`   | `←` LeftArrow   | mouse left                 |
+| `G+J`   | `↓` DownArrow   | mouse down                 |
+| `G+K`   | `↑` UpArrow     | mouse up                   |
+| `G+L`   | `→` RightArrow  | mouse right                |
 | `⌃H`   | `←` LeftArrow   | expose all                 |
 | `⌃J`   | `↓` DownArrow   | show desktops              |
 | `⌃K`   | `↑` UpArrow     | switch prev desktop        |

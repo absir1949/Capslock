@@ -1,0 +1,190 @@
+{
+    "title": "Hyper Application",
+   "rules": [
+      {
+        "description": "Hyper Application",
+        "manipulators": [
+          {
+            "from": {
+              "key_code": "e",
+              "modifiers": {
+                "mandatory": [
+                  "left_command",
+                  "right_command",
+                  "right_control",
+                  "right_shift",
+                  "right_option"
+                ]
+              }
+            },
+            "to": [
+              {
+                "shell_command": "open -a 'Google Chrome'"
+              }
+            ],
+            "type": "basic"
+          },
+          {
+            "from": {
+              "key_code": "e",
+              "modifiers": {
+                "mandatory": [
+                  "right_command",
+                  "right_control",
+                  "right_shift",
+                  "right_option"
+                ]
+              }
+            },
+            "to": [
+              {
+                "key_code": "spacebar",
+                "modifiers": [
+                  "left_option"
+                ]
+              }
+            ],
+            "type": "basic"
+          },
+          {
+            "from": {
+              "key_code": "r",
+              "modifiers": {
+                "mandatory": [
+                  "left_command",
+                  "right_command",
+                  "right_control",
+                  "right_shift",
+                  "right_option"
+                ]
+              }
+            },
+            "to": [
+              {
+                "shell_command": "open -a 'Preview'"
+              }
+            ],
+            "type": "basic"
+          },
+          {
+            "from": {
+              "key_code": "r",
+              "modifiers": {
+                "mandatory": [
+                  "right_command",
+                  "right_control",
+                  "right_shift",
+                  "right_option"
+                ]
+              }
+            },
+            "to": [
+              {
+                "shell_command": "open -a 'obsidian'"
+              }
+            ],
+            "type": "basic"
+          },
+          {
+            "from": {
+              "key_code": "t",
+              "modifiers": {
+                "mandatory": [
+                  "left_command",
+                  "right_command",
+                  "right_control",
+                  "right_shift",
+                  "right_option"
+                ]
+              }
+            },
+            "to": [
+              {
+                "shell_command": "open -a 'Typora'"
+              }
+            ],
+            "type": "basic"
+          },
+          {
+            "from": {
+              "key_code": "t",
+              "modifiers": {
+                "mandatory": [
+                  "right_command",
+                  "right_control",
+                  "right_shift",
+                  "right_option"
+                ]
+              }
+            },
+            "to": [
+              {
+                "shell_command": "open -a 'todoist'"
+              }
+            ],
+            "type": "basic"
+          },
+          {
+            "from": {
+              "key_code": "y",
+              "modifiers": {
+                "mandatory": [
+                  "right_command",
+                  "right_control",
+                  "right_shift",
+                  "right_option"
+                ]
+              }
+            },
+            "to": [
+              {
+                "shell_command": "open -a 'outlook'"
+              }
+            ],
+            "type": "basic"
+          },
+
+          {
+            "from": {
+              "key_code": "g",
+              "modifiers": {
+                "mandatory": [
+                  "right_command",
+                  "right_control",
+                  "right_shift",
+                  "right_option"
+                ]
+              }
+            },
+            "to": [
+              {
+                "shell_command": "open -a 'wechat'"
+              }
+            ],
+            "type": "basic"
+          },
+          {
+            "from": {
+              "key_code": "g",
+              "modifiers": {
+                "mandatory": [
+                  "left_command",
+                  "right_command",
+                  "right_control",
+                  "right_shift",
+                  "right_option"
+                ]
+              }
+            },
+            "to": [
+              {
+                "shell_command": "open -a 'weCom'"
+              }
+            ],
+            "type": "basic"
+          }
+        ]
+      }  
+    ]
+  }
+  

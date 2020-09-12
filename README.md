@@ -56,7 +56,6 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 
 
 
-
 ## Usage (mac)
 
 ![](images/keyboard.png)
@@ -90,12 +89,8 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `P`    | `⇟` PageDn     | cursor page down         |
 | `⌘H`    | `⇧←` LeftArrow  | cursor left and selection         |
 | `⌘J`    | `⇧↓` DownArrow  | cursor down and selection         |
-| `⌘K`    | `⇧↑` UpArrow    | cursor up and selection         |
-| `⌘L`    | `⇧→` RightArrow | cursor right and selection         |
-| `⌥H`    | `←` LeftArrow  | mouse left              |
-| `⌥J`    | `↓` DownArrow  | mouse down              |
-| `⌥K`    | `↑` UpArrow    | mouse up                |
-| `⌥L`    | `→` RightArrow | mouse right             |
+| `⌘K`    | `⇧↑` UpArrow    | cursor up and selection           |
+| `⌘L`    | `⇧→` RightArrow | cursor right and selection        |
 | `⌃H`    | `←` LeftArrow  | switch prev desktop     |
 | `⌃J`    | `↓` DownArrow  | show desktops           |
 | `⌃K`    | `↑` UpArrow    | expose all              |
@@ -105,10 +100,18 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 ### Mousekey
 
 * Emulate mouse with keyboard
-* Also can be achieved by `⌥` with `HJKL`
-
 | Origin | Maps to        | Comment                  |
 | ------ | -------------- | ------------------------ |
+| `⌥H`    | `←` LeftArrow  | mouse left              |
+| `⌥J`    | `↓` DownArrow  | mouse down              |
+| `⌥K`    | `↑` UpArrow    | mouse up                |
+| `⌥L`    | `→` RightArrow | mouse right             |
+| `⌥1`    | move to Upleft        | mouse left              |
+| `⌥2`    | move to UpRight       | mouse down              |
+| `⌥3`    | move to DownLeft      | mouse up                |
+| `⌥4`    | move to DownRight     | mouse right             |
+| `⌥q`    | switch screen focus   | mouse right             |
+
 | `←`    | MouseLeft  | mouse cursor left              |
 | `↓`    | MouseDown  | mouse cursor down              |
 | `↑`    | MouseUp    | mouse cursor up                |
@@ -152,6 +155,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `f`    | `⌃f `Ctrl+f |                                   |
 | `a`    | `⌃a`Ctrl+a  |  |
 | `⌘s`   | `⌃s` Ctrl+s |                                        |
+| `t`    | `⌃t`cmd+t  |  |
 
 #### Applications
 
@@ -159,16 +163,16 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 
 | Origin | Maps to                 | Comment                                         |
 | ------ | ----------------------- | ----------------------------------------------- |
-| `E`    | Open alfred             | Open alfred                                     |
-| `⌘E`   | Open Finder             | Open File Browser                               |
-| `R`    | Open iTerm2             | Great terminal for osx (`Run`)                  |
+| `e`    | Open alfred             | Open alfred                                  |
+| `⌘E`   | Open chrome             | Open chrome                             |
+| `R`    | Open obsidian           | open obsidian                           |
 | `⌘R`   | Open Preview            | Switch to opened picture, pdf, etc...           |
-| `T`    | Open obsidian           | obsidian                                        |
-| `⌘T`   | Open todoist            | todoist                                        |
-| `⌘F`   | Open onedrive           | Find onedrive                                   |
-| `G`    | Open 企业微信             |                                     |
-| `⌘G`   | Open Chrome             | Google Chrome                                   |
-
+| `T`    | Open todoist            | open todoist               |
+| `y`    | Open outlook            |open outlook  |
+| `⌘D`   | Open Dictionary         | Find words                                      |
+| `⌘o`    | Open onedrive          | open ondrive                             |
+| `G`    | Open wechat             | Open what                                     |
+| `⌘G`   | Open weCom              | open weCom                              |
 ### Functional
 
 - Use F1,…F12 as standard functional keys, while hold hyper to turn them back.
