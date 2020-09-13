@@ -91,10 +91,10 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `⌘J`    | `⇧↓` DownArrow  | cursor down and selection         |
 | `⌘K`    | `⇧↑` UpArrow    | cursor up and selection           |
 | `⌘L`    | `⇧→` RightArrow | cursor right and selection        |
-| `⌃H`    | `←` LeftArrow  | switch prev desktop     |
-| `⌃J`    | `↓` DownArrow  | show desktops           |
-| `⌃K`    | `↑` UpArrow    | expose all              |
-| `⌃L`    | `→` RightArrow | switch next desktop     |
+
+
+
+
 
 
 ### Mousekey
@@ -138,7 +138,11 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `Q`              | `⌘Q`                    | Close Window                             |
 | `W`              | `⌘W`                    | Close Tab                                |
 | `S`              | `⌃⇥`  Ctrl+Tab          | Switch Tab                               |
-| `D`             | `⌃⇧⇥` Ctrl+Shift+Tab    | Swtich Tab Reversely                     |
+| `D`              | `⌃⇧⇥` Ctrl+Shift+Tab    | Swtich Tab Reversely                     |
+| `v+H`            | `←` LeftArrow           | switch prev desktop     |
+| `v+h`            | `↓` DownArrow           | show desktops           |
+| `v+K`            | `↑` UpArrow             | expose all              |
+| `v+L`            | `→` RightArrow          | switch next desktop     |
 
 ### Bash Control
 
