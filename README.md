@@ -171,12 +171,12 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `⌘E`   | Open chrome             | Open chrome                             |
 | `R`    | Open obsidian           | open obsidian                           |
 | `⌘R`   | Open Preview            | Switch to opened picture, pdf, etc...           |
-| `T`    | Open todoist            | open todoist               |
+| `T`    | Open taskpaper          | open taskpaper               |
 | `y`    | Open outlook            |open outlook  |
 | `⌘D`   | Open Dictionary         | Find words                                      |
 | `⌘o`    | Open onedrive          | open ondrive                             |
-| `G`    | Open wechat             | Open what                                     |
-| `⌘G`   | Open weCom              | open weCom                              |
+| `G`    | Open weCom              | Open weCom                                     |
+| `⌘G`   | Open weChat             | open weChat                              |
 ### Functional
 
 - Use F1,…F12 as standard functional keys, while hold hyper to turn them back.
