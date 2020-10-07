@@ -881,7 +881,7 @@
               {
                 "type": "variable_if",
                 "name": "KA_CTL_MODEL",
-                "value": 1
+                "value": 2
               }
             ]
           },
