@@ -68,6 +68,8 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | --------- | ---------- | -------------------------- |
 | `⇪` Press | `⎋` Escape | Single press to escape     |
 | `⇪` Hold  | `✱`  Hyper | Enable Hyper Functionality |
+| `✱` + 'V'  | WC model     | use wc model               |
+| `✱` + 'X'  | Mouse model  | use Mousemodel             |
 
 ### Navigation
 
@@ -112,9 +114,8 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `X+8`    | move to UpRight       | mouse down              |
 | `X+9`    | move to DownLeft      | mouse up                |
 | `X+0`    | move to DownRight     | mouse right             |
-| `X+I`    | switch screen left    | mouse right             |
-| `X+O`    | switch screen right   | mouse right             |
-| `X+U`    | MouseLeft     | mouse left button click         |
+| `X+I/O`  | switch mouse focus screen    | switch mouse focus screen           |
+| `X+U`    | MouseLeft     | mouse left button click           |
 | `X+P`    | MouseRight      | mouse right button click |
 
 ### Deletion
@@ -141,7 +142,8 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `v+h`            | `↓` DownArrow           | show desktops           |
 | `v+K`            | `↑` UpArrow             | expose all              |
 | `v+L`            | `→` RightArrow          | switch next desktop     |
-| `v+F`            | 全屏                     |  全屏                    |
+| `v+u`            | `⌘^F`                   | full screen                   |
+| `v+p`            | `⌘m`                    | minimum                   |
 
 ### Bash Control
 
