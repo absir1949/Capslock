@@ -100,6 +100,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 ### Mousekey
 
 * Emulate mouse with keyboard
+
 | Origin | Maps to        | Comment                  |
 | ------ | -------------- | ------------------------ |
 | `X+H`    | `←` LeftArrow  | mouse left              |
