@@ -113,7 +113,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `X+0`    | move to DownRight     | mouse right             |
 | `X+I`    | switch screen left    | mouse right             |
 | `X+O`    | switch screen right   | mouse right             |
-| `X+U`    | MouseLeft     | mouse left button click           |
+| `X+U`    | MouseLeft     | mouse left button click         |
 | `X+P`    | MouseRight      | mouse right button click |
 
 ### Deletion
