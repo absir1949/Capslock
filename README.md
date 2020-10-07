@@ -102,22 +102,19 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 * Emulate mouse with keyboard
 | Origin | Maps to        | Comment                  |
 | ------ | -------------- | ------------------------ |
-| `⌥H`    | `←` LeftArrow  | mouse left              |
-| `⌥J`    | `↓` DownArrow  | mouse down              |
-| `⌥K`    | `↑` UpArrow    | mouse up                |
-| `⌥L`    | `→` RightArrow | mouse right             |
-| `⌥1`    | move to Upleft        | mouse left              |
-| `⌥2`    | move to UpRight       | mouse down              |
-| `⌥3`    | move to DownLeft      | mouse up                |
-| `⌥4`    | move to DownRight     | mouse right             |
-| `⌥q`    | switch screen focus   | mouse right             |
-
-| `←`    | MouseLeft  | mouse cursor left              |
-| `↓`    | MouseDown  | mouse cursor down              |
-| `↑`    | MouseUp    | mouse cursor up                |
-| `→`    | MouseRight | mouse cursor right             |
-| `↩`    | MouseLeft     | mouse left button click           |
-| `⌘↩`    | MouseRight      | mouse right button click |
+| `X+H`    | `←` LeftArrow  | mouse left              |
+| `X+J`    | `↓` DownArrow  | mouse down              |
+| `X+K`    | `↑` UpArrow    | mouse up                |
+| `X+L`    | `→` RightArrow | mouse right             |
+| `X+Z`    | slowly mouse move  | mouse slowly        |
+| `X+7`    | move to Upleft        | mouse left              |
+| `X+8`    | move to UpRight       | mouse down              |
+| `X+9`    | move to DownLeft      | mouse up                |
+| `X+0`    | move to DownRight     | mouse right             |
+| `X+I`    | switch screen left    | mouse right             |
+| `X+O`    | switch screen right   | mouse right             |
+| `X+U`    | MouseLeft     | mouse left button click           |
+| `X+P`    | MouseRight      | mouse right button click |
 
 ### Deletion
 
@@ -143,6 +140,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `v+h`            | `↓` DownArrow           | show desktops           |
 | `v+K`            | `↑` UpArrow             | expose all              |
 | `v+L`            | `→` RightArrow          | switch next desktop     |
+| `v+F`            | 全屏                     |  全屏                    |
 
 ### Bash Control
 

@@ -307,7 +307,14 @@
               "key_code": "page_up"
             }
           ],
-          "type": "basic"
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "WC_keys_enable",
+              "value": 0
+            }
+          ]
         },
         {
           "from": {
@@ -349,7 +356,14 @@
               "key_code": "home"
             }
           ],
-          "type": "basic"
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "WC_keys_enable",
+              "value": 0
+            }
+          ]
         },
         {
           "from": {
@@ -391,7 +405,14 @@
               "key_code": "end"
             }
           ],
-          "type": "basic"
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "WC_keys_enable",
+              "value": 0
+            }
+          ]
         },
         {
           "from": {
@@ -433,7 +454,14 @@
               "key_code": "page_down"
             }
           ],
-          "type": "basic"
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "WC_keys_enable",
+              "value": 0
+            }
+          ]
         }
       ]
     }    
