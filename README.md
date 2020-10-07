@@ -109,12 +109,17 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `X+J`    | `↓` DownArrow  | mouse down              |
 | `X+K`    | `↑` UpArrow    | mouse up                |
 | `X+L`    | `→` RightArrow | mouse right             |
+| `⌘X+H`    |  scroll left | mouse scorll left              |
+| `⌘X+J`    |  scroll down | mouse scroll down              |
+| `⌘X+K`    |  scroll UpArrow    | mouse scroll up                |
+| `⌘X+L`    |  scroll RightArrow | mouse scroll right             |
 | `X+Z`    | slowly mouse move  | mouse slowly        |
 | `X+7`    | move to Upleft        | mouse left              |
 | `X+8`    | move to UpRight       | mouse down              |
 | `X+9`    | move to DownLeft      | mouse up                |
 | `X+0`    | move to DownRight     | mouse right             |
-| `X+I/O`  | switch mouse focus screen    | switch mouse focus screen           |
+| `X+O`    | change screen focus         | change screen focus            |
+| `X+I`    | MouseMiddle           | mouse middle button click            |
 | `X+U`    | MouseLeft     | mouse left button click           |
 | `X+P`    | MouseRight      | mouse right button click |
 
