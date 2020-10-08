@@ -2373,7 +2373,14 @@
               ]
             }
           ],
-          "type": "basic"
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "KA_CTL_MODEL",
+              "value": 0
+            }
+          ]
         },
         {
           "from": {
@@ -2395,7 +2402,14 @@
               ]
             }
           ],
-          "type": "basic"
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "KA_CTL_MODEL",
+              "value": 0
+            }
+          ]
         },
         {
           "from": {
@@ -2417,7 +2431,14 @@
               ]
             }
           ],
-          "type": "basic"
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "KA_CTL_MODEL",
+              "value": 0
+            }
+          ]
         },
         {
           "from": {
@@ -2439,7 +2460,14 @@
               ]
             }
           ],
-          "type": "basic"
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "KA_CTL_MODEL",
+              "value": 0
+            }
+          ]
         },
         {
           "from": {
@@ -2756,7 +2784,7 @@
         },
         {
           "from": {
-            "key_code": "spacebar",
+            "key_code": "sxpacebar",
             "modifiers": {
               "mandatory": [
                 "right_command",
