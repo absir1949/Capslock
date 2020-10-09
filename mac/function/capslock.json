@@ -932,7 +932,7 @@
             },
             "to": [
               {
-                "shell_command": "open -g 'hammerspoon://ChangeFocus'"
+                "shell_command": "open -g 'hammerspoon://ChangeMouseFocus'"
               }
             ],
             "conditions": [
