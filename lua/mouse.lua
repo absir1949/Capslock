@@ -1,6 +1,6 @@
 
 
-
+q
 
 
 -- Move Mouse to center of next Monitor
@@ -23,6 +23,6 @@ hs.urlevent.bind("MouseMove", function(eventName, params)
     local position = {{0.25,0.25},{0.75,0.25},{0.25,0.75},{0.75,0.75}}
     local point = hs.geometry.point(rect.w * position[choose][1],rect.h * position[choose][2])
 
-    hs.mouse.setAbsolutePosition(point)
+    hs.mouse.setRelativePosition(point,screen)
 
 end)
