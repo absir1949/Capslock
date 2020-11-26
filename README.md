@@ -177,7 +177,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `⌘E`   | Open chrome             | Open chrome                             |
 | `R`    | Open obsidian           | open obsidian                           |
 | `⌘R`   | Open Preview            | Switch to opened picture, pdf, etc...           |
-| `T`    | Open taskpaper          | open taskpaper               |
+| `T`    | Open ticktick           | open ticktick                |
 | `y`    | Open outlook            |open outlook  |
 | `⌘D`   | Open Dictionary         | Find words                                      |
 | `⌘o`    | Open onedrive          | open ondrive                             |
