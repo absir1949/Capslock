@@ -93,6 +93,8 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `⌘J`    | `⇧↓` DownArrow  | cursor down and selection         |
 | `⌘K`    | `⇧↑` UpArrow    | cursor up and selection           |
 | `⌘L`    | `⇧→` RightArrow | cursor right and selection        |
+| `⌥K`    | `⌥←` go back    |  go back     需要软件自定义    |
+| `⌥L`    | `⌥→` go foward | go foward     需要自定义    |
 
 
 
@@ -235,8 +237,8 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `-` Minus          | `_`     | Hyphen                   |
 | `=` Equal          | `+`     | Plus                     |
 | `[` Left Bracket   | `(`     | Left Round Bracket `⇧9`  |
-| `]`  Right Bracket | `)`     | Right Round Bracket `⇧0` |
-| `;` Semicolon      | `!`     | Exclamation              |
+| `⌥K`    | `⌥←` go back    |  go back         |
+| `⌥L`    | `⌥→` go foward | go foward       || `;` Semicolon      | `!`     | Exclamation              |
 | `'` Single Quote   | `=`     | EqualSign                |
 | `⌘;` Semicolon     | `!`     | Colon                    |
 | `⌘'` Single Quote  | `=`     | EqualSign                |
