@@ -932,7 +932,7 @@
             },
             "to": [
               {
-                "shell_command": "open -g 'hammerspoon://ChangeMouseFocus'"
+                "shell_command": "open -g 'hammerspoon://ChangeFocus'"
               }
             ],
             "conditions": [
@@ -1614,7 +1614,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Google Chrome'"
+              "shell_command": "open -a 'Microsoft Edge'"
             }
           ],
           "type": "basic"
@@ -1714,7 +1714,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'ticktick'"
+              "shell_command": "open -a 'todoist'"
             }
           ],
           "type": "basic"
@@ -1745,7 +1745,32 @@
             }
           ]
         },
-
+        {
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Find Any File.app'"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "KA_CTL_MODEL",
+              "value": 0
+            }
+          ]
+        },
         {
           "from": {
             "key_code": "g",
@@ -1760,10 +1785,17 @@
           },
           "to": [
             {
-              "shell_command": "open -a '企业微信.app'"
+              "shell_command": "open -a 'wechat'"
             }
           ],
-          "type": "basic"
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "KA_CTL_MODEL",
+              "value": 0
+            }
+          ]
         },
         {
           "from": {
@@ -1783,7 +1815,14 @@
               "shell_command": "open -a 'wechat'"
             }
           ],
-          "type": "basic"
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "KA_CTL_MODEL",
+              "value": 0
+            }
+          ]
         }
       ]
     },
@@ -2373,14 +2412,7 @@
               ]
             }
           ],
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "KA_CTL_MODEL",
-              "value": 0
-            }
-          ]
+          "type": "basic"
         },
         {
           "from": {
@@ -2402,14 +2434,7 @@
               ]
             }
           ],
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "KA_CTL_MODEL",
-              "value": 0
-            }
-          ]
+          "type": "basic"
         },
         {
           "from": {
@@ -2431,14 +2456,7 @@
               ]
             }
           ],
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "KA_CTL_MODEL",
-              "value": 0
-            }
-          ]
+          "type": "basic"
         },
         {
           "from": {
@@ -2460,14 +2478,7 @@
               ]
             }
           ],
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "KA_CTL_MODEL",
-              "value": 0
-            }
-          ]
+          "type": "basic"
         },
         {
           "from": {
@@ -2784,7 +2795,7 @@
         },
         {
           "from": {
-            "key_code": "sxpacebar",
+            "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
                 "right_command",

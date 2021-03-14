@@ -163,7 +163,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `C`    | `⌃C`Ctrl+C  | SIGINT                                       |
 | `V`    | `⌃V`Ctrl+V  | Vim Prefix                                   |
 | `B`    | `⌃B`Ctrl+B  | [Tmux](http://tmux.github.io) Default Prefix |
-| `⌘D`   | `⌃D` Ctrl+D | EOF                                          |
+| `⌘D`   | `⌃D` Ctrl+D | EOF                                          |∫∫
 | `f`    | `⌃f `Ctrl+f |                                   |
 | `a`    | `⌃a`Ctrl+a  |  |
 | `⌘s`   | `⌃s` Ctrl+s |                                        |
@@ -176,11 +176,12 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | Origin | Maps to                 | Comment                                         |
 | ------ | ----------------------- | ----------------------------------------------- |
 | `e`    | Open alfred             | Open alfred                                  |
-| `⌘E`   | Open chrome             | Open chrome                             |
+| `⌘E`   | Open chrome             | Open Edge                             |
 | `R`    | Open obsidian           | open obsidian                           |
 | `⌘R`   | Open Preview            | Switch to opened picture, pdf, etc...           |
-| `T`    | Open ticktick           | open ticktick                |
+| `T`    | Open ticktick           | open todoist                |
 | `y`    | Open outlook            |open outlook  |
+| `f`    | Open outlook            |open Find Any File.app  |
 | `⌘D`   | Open Dictionary         | Find words                                      |
 | `⌘o`    | Open onedrive          | open ondrive                             |
 | `G`    | Open weCom              | Open weCom                                     |
