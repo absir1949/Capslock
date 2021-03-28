@@ -139,14 +139,14 @@ Capslock以ANSI布局键盘为蓝本，对Capslock之外的 所有按键 进行�
 - 高频系统应用与流行的开发者工具已经被默认分配至3个控制平面中 ✱/⌘/⌥。
 - 您可以通过修改配置文件自行定制喜欢的应用。
 
-| 键\修饰 | ✱                   | ⌘         | ⌥           | ……   |
-| ------- | ------------------- | --------- | ----------- | ---- |
-| E       | Safari              | Finder    | Mail        |      |
-| R       | iTerm2              | Preview   | Terminal    |      |
-| T       | Visual Studio Code  | Typora    | Note        |      |
-| Y       | Siri                | Karabiner | Amphetamine |      |
-| F       | Alfred (bind ⌃⌥⇧⌘F) | Dash      | Dictionary  |      |
-| G       | Intellij IDEA       | Chrome    | Calender    |      |
+| 键\修饰 | ✱                                        | ⌘              | ⌥                  | ……   |
+| ------- | ---------------------------------------- | -------------- | ------------------ | ---- |
+| E       | alfred                                   | edge           | iterm2             |      |
+| R       | Logseq                                   | Preview        | Visual Studio Code |      |
+| T       | todoist                                  | Typora         | Terminal           |      |
+| Y       | Siri                                     | outlook        |                    |      |
+| F       | qspace                                   | find any files | Dictionary         |      |
+| G       | Calender(外部日历软件支持，这里不做设定) | Chrome         | wechat             |      |
 
 ### 终端控制
 
@@ -267,41 +267,6 @@ Capslock以ANSI布局键盘为蓝本，对Capslock之外的 所有按键 进行�
 
 ### 
 
-### Bash Control
-
-- Common bash utils: EOF, SIGINT, SIGTSTP, VIM/Tmux Prefix
-
-| Origin | Maps to     | Comment                                      |
-| ------ | ----------- | -------------------------------------------- |
-| `Z`    | `⌃Z` Ctrl+Z | SIGTSTP                                      |
-| `X`    | `⌃R` Ctrl+R | IDE Run                                      |
-| `C`    | `⌃C`Ctrl+C  | SIGINT                                       |
-| `V`    | `⌃V`Ctrl+V  | Vim Prefix                                   |
-| `B`    | `⌃B`Ctrl+B  | [Tmux](http://tmux.github.io) Default Prefix |
-| `⌘D`   | `⌃D` Ctrl+D | EOF                                          |∫∫
-| `f`    | `⌃f `Ctrl+f |                                   |
-| `a`    | `⌃a`Ctrl+a  |  |
-| `⌘s`   | `⌃s` Ctrl+s |                                        |
-| `t`    | `⌃t`cmd+t  |  |
-
-#### Applications
-
-- Maybe you'd like overwrite these with your own favorite apps.
-
-| Origin | Maps to                 | Comment                                         |
-| ------ | ----------------------- | ----------------------------------------------- |
-| `e`    | Open alfred             | Open alfred                                  |
-| `⌘E`   | Open chrome             | Open Edge                             |
-| `R`    | Open logseq             | open logseq                          |
-| `⌘R`   | Open Preview            | Switch to opened picture, pdf, etc...           |
-| `T`    | Open todoist            | open todoist                |
-| `y`    | Open outlook            |open outlook  |
-| `f`    | Open qspace             |open qspace                               |
-| `⌘f`    | Open qspace            |open Find Any File.app  |
-| `⌘D`   | Open Dictionary         | Find words   in bob                                   |
-| `⌘o`    | Open onedrive          | open ondrive                             |
-| `G`    | Open weCom              | Open weCom                                     |
-| `⌘G`   | Open weChat             | open weChat                              |
 
 
 

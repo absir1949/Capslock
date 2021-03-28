@@ -1047,7 +1047,7 @@
             ]
           },
           {
-            "description": "shift + u = option + command + hyphen (zoom out)",
+            "description": "shift + u =   command + hyphen (zoom out)",
             "type": "basic",
             "from": {
               "key_code": "u",
@@ -1066,7 +1066,6 @@
                 "key_code": "hyphen",
                 "modifiers": [
                   "left_command",
-                  "left_option"
                 ]
               }
             ]
@@ -1686,7 +1685,7 @@
             ]
           },
           {
-            "description": "shift + p = option + command + equal_sign (zoom in)",
+            "description": "shift + p = command + equal_sign (zoom in)",
             "type": "basic",
             "from": {
               "key_code": "p",
@@ -1704,8 +1703,7 @@
               {
                 "key_code": "equal_sign",
                 "modifiers": [
-                  "left_command",
-                  "left_option"
+                  "left_command"
                 ]
               }
             ]
@@ -4777,7 +4775,7 @@
         "description": "Hyper Application",
         "manipulators": [
           {
-            "description": "command + e = finder",
+            "description": "command + e = edge",
             "type": "basic",
             "from": {
               "key_code": "e",
@@ -4793,12 +4791,12 @@
             },
             "to": [
               {
-                "shell_command": "open -a finder"
+                "shell_command": "open -a 'Microsoft Edge'"
               }
             ]
           },
           {
-            "description": "option + e = mail",
+            "description": "option + e = iterm2",
             "type": "basic",
             "from": {
               "key_code": "e",
@@ -4814,12 +4812,12 @@
             },
             "to": [
               {
-                "shell_command": "open -a mail"
+                "shell_command": "open -a 'iTerm.app'"
               }
             ]
           },
           {
-            "description": "e = safari",
+            "description": "e = alfred",
             "type": "basic",
             "from": {
               "key_code": "e",
@@ -4834,7 +4832,10 @@
             },
             "to": [
               {
-                "shell_command": "open -a Safari"
+                "key_code": "spacebar",
+                "modifiers": [
+                  "left_option"
+                ]
               }
             ]
           },
@@ -4860,7 +4861,7 @@
             ]
           },
           {
-            "description": "option + r = terminal",
+            "description": "option + r = Visual Studio Code",
             "type": "basic",
             "from": {
               "key_code": "r",
@@ -4876,12 +4877,12 @@
             },
             "to": [
               {
-                "shell_command": "open -a terminal"
+                "shell_command": "open -a 'Visual Studio Code'"
               }
             ]
           },
           {
-            "description": "r = iTerm2",
+            "description": "r = logseq",
             "type": "basic",
             "from": {
               "key_code": "r",
@@ -4896,7 +4897,7 @@
             },
             "to": [
               {
-                "shell_command": "open -a iTerm"
+                "shell_command": "open -a 'Logseq'"
               }
             ]
           },
@@ -4922,7 +4923,7 @@
             ]
           },
           {
-            "description": "option + t = notes",
+            "description": "option + t = Terminal",
             "type": "basic",
             "from": {
               "key_code": "t",
@@ -4938,12 +4939,12 @@
             },
             "to": [
               {
-                "shell_command": "open -a notes"
+                "shell_command": "open -a 'Terminal.app'"
               }
             ]
           },
           {
-            "description": "t = iTerm2",
+            "description": "t = todoist",
             "type": "basic",
             "from": {
               "key_code": "t",
@@ -4958,12 +4959,12 @@
             },
             "to": [
               {
-                "shell_command": "open -a 'Visual Studio Code'"
+                "shell_command": "open -a 'todoist'"
               }
             ]
           },
           {
-            "description": "command + y = karabiner",
+            "description": "command + y = outlook",
             "type": "basic",
             "from": {
               "key_code": "y",
@@ -4979,28 +4980,7 @@
             },
             "to": [
               {
-                "shell_command": "open -a Karabiner-Elements"
-              }
-            ]
-          },
-          {
-            "description": "option + y = amphetamine",
-            "type": "basic",
-            "from": {
-              "key_code": "y",
-              "modifiers": {
-                "mandatory": [
-                  "left_option",
-                  "right_command",
-                  "right_control",
-                  "right_shift",
-                  "right_option"
-                ]
-              }
-            },
-            "to": [
-              {
-                "shell_command": "open -a amphetamine"
+                "shell_command": "open -a 'Microsoft Outlook.app'"
               }
             ]
           },
@@ -5025,7 +5005,7 @@
             ]
           },
           {
-            "description": "command + f = Dash",
+            "description": "command + f = Find Any File.app",
             "type": "basic",
             "from": {
               "key_code": "f",
@@ -5041,12 +5021,12 @@
             },
             "to": [
               {
-                "shell_command": "open -a Dash"
+                "shell_command": "open -a 'Find Any File.app'"
               }
             ]
           },
           {
-            "description": "option + f = Dictionary",
+            "description": "option + f = bob",
             "type": "basic",
             "from": {
               "key_code": "f",
@@ -5067,7 +5047,7 @@
             ]
           },
           {
-            "description": "f = Alfred 4",
+            "description": "f = QSpace",
             "type": "basic",
             "from": {
               "key_code": "f",
@@ -5082,7 +5062,7 @@
             },
             "to": [
               {
-                "shell_command": "open -a 'Alfred 4'"
+                "shell_command": "open -a 'QSpace'"
               }
             ]
           },
@@ -5108,7 +5088,7 @@
             ]
           },
           {
-            "description": "option + g = Calender",
+            "description": "option + g = wechat",
             "type": "basic",
             "from": {
               "key_code": "g",
@@ -5124,27 +5104,7 @@
             },
             "to": [
               {
-                "shell_command": "open -a Calendar"
-              }
-            ]
-          },
-          {
-            "description": "g = Intellij IDEA",
-            "type": "basic",
-            "from": {
-              "key_code": "g",
-              "modifiers": {
-                "mandatory": [
-                  "right_command",
-                  "right_control",
-                  "right_shift",
-                  "right_option"
-                ]
-              }
-            },
-            "to": [
-              {
-                "shell_command": "open -a 'IntelliJ IDEA'"
+                "shell_command": "open -a 'wechat'"
               }
             ]
           }
