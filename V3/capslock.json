@@ -1065,7 +1065,7 @@
               {
                 "key_code": "hyphen",
                 "modifiers": [
-                  "left_command",
+                  "left_command"
                 ]
               }
             ]
