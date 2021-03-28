@@ -5094,7 +5094,6 @@
               "key_code": "g",
               "modifiers": {
                 "mandatory": [
-                  "left_option",
                   "right_command",
                   "right_control",
                   "right_shift",
