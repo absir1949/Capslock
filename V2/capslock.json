@@ -1675,7 +1675,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'obsidian'"
+              "shell_command": "open -a 'Logseq'"
             }
           ],
           "type": "basic"
@@ -1750,6 +1750,33 @@
             "key_code": "f",
             "modifiers": {
               "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'QSpace'"
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "KA_CTL_MODEL",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
                 "right_command",
                 "right_control",
                 "right_shift",

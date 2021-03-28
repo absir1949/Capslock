@@ -1,156 +1,271 @@
 # Capslock
 
-*Make CapsLock Great Again!*  
-
-![](images/trump.jpg)
+将 ⇪CapsLock（大写锁定键）改造为一个强力的功能修饰键（✱ Hyper ），奇迹般地提高操作效率与生产力。
 
 
 
-## Why CapsLock
-
-#### Transform Capslock into *Hyper*, improve your productivity tremendously!
-
-* Powerful: Make Capslock a great new modifier key: **Hyper(✱)**. 
-* Well-Designed:  High-Freq key in hot-area. Bring lots of useful functionalities.
-* Compatiable: Work well with other modifiers, appliactions, devices.
-* Light-Weight:  Just a small script, carry it everywhere !
-* [Design Document](design.md)
-
-
-
-
-## Platforms
-
-- [CapsLock(Mac)](mac/)  via  [Karabiner-Elements](https://pqrs.org/osx/karabiner/)
-  - macOS High Sierra (10.13)
-  - macOS Sierra (10.12)
-  - macOS EI Capitan (10.11)
-
-
-  - Old [XML]() Version (before OS X 10.11, *no longer maintained*) 
-- [CapsLock(Windows)](win/) via AutoHotKey  *(no longer maintianed)*
-  - Windows XP, Vista, 7, 8, 10
-
-
-
-
-## Install (mac)
-
-1. Download [Karabiner-Elements](https://pqrs.org/osx/karabiner/) and Install
-
-2. Copy URL to your browser to import configuration script.
-
-```bash
-# This Repo (open in safari)
-karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/Vonng/Capslock/master/mac/capslock.json
-```
-
-```bash
-# Karabiner-Elements Offical Script Gallery
-karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs.org%2Fosx%2Fkarabiner%2Fcomplex_modifications%2Fjson%2Fcaps_lock_enhancement.json
-```
-
-3. Open Karabiner, Tab "ComplexModification", Button "Add Item", and enable entries you like.
-4. Default conf file path is `$HOME/.config/karabiner/assets/complex_modifications`. Modify it if you like.
-5. Enable functions: `[App] karabiner-elements -> [Tab] Complex Modification -> Add Item`
-
-
-
-## Usage (mac)
-
-![](images/keyboard.png)
-
-### Basic
-
-`✱` Hyper actually maps to `⌃⌥⇧⌘` (all right modifiers) , It works well with additional left modifiers. And compatible with most application. Hold CapsLock to enable `Hyper` funcationality while press it will emit an `Escape`.
-
-| Origin    | Maps to    | Comment                    |
-| --------- | ---------- | -------------------------- |
-| `⇪` Press | `⎋` Escape | Single press to escape     |
-| `⇪` Hold  | `✱`  Hyper | Enable Hyper Functionality |
-| `✱` + 'V'  | WC model     | use wc model               |
-| `✱` + 'X'  | Mouse model  | use Mousemodel             |
-
-### Navigation
-
-- Hold  `✱` Hyper to enable navigators
-- Hold additional `⌘` Command for **selection** . (just like holding ⇧shift in normal)
-- Hold additional `⌥`  with `HJKL`  for **mouse movement**
-- Hold additional `⇧` with `HJKL` for **switching tab/app**
-- Hold additional `⌃`  with `HJKL`  for **desktop management** . (just like holding ⌃ctrl with arrow key)
-
-| Origin | Maps to        | Comment                  |
-| ------ | -------------- | ------------------------ |
-| `H`    | `←` LeftArrow  | cursor left              |
-| `J`    | `↓` DownArrow  | cursor down              |
-| `K`    | `↑` UpArrow    | cursor up                |
-| `L`    | `→` RightArrow | cursor right             |
-| `U`    | `⇞` PageUp     | cursor page up           |
-| `I`    | `↖` Home       | cursor to line(doc) head |
-| `O`    | `↘`  End       | cursor to line(doc) end  |
-| `P`    | `⇟` PageDn     | cursor page down         |
-| `⌘H`    | `⇧←` LeftArrow  | cursor left and selection         |
-| `⌘J`    | `⇧↓` DownArrow  | cursor down and selection         |
-| `⌘K`    | `⇧↑` UpArrow    | cursor up and selection           |
-| `⌘L`    | `⇧→` RightArrow | cursor right and selection        |
-| `⌥K`    | `⌥←` go back    |  go back     需要软件自定义    |
-| `⌥L`    | `⌥→` go foward | go foward     需要自定义    |
+在[Vonng](https://github.com/Vonng)/[Capslock](https://github.com/Vonng/Capslock) 的项目上进行部分自定义操作，感谢 @Vonng。
 
 
 
 
 
 
-### Mousekey
+## 安装
 
-* Emulate mouse with keyboard
+在MacOS上，Capslock通过 Karabiner-Elements 提供服务
 
-| Origin | Maps to        | Comment                  |
-| ------ | -------------- | ------------------------ |
-| `X+H`    | `←` LeftArrow  | mouse left              |
-| `X+J`    | `↓` DownArrow  | mouse down              |
-| `X+K`    | `↑` UpArrow    | mouse up                |
-| `X+L`    | `→` RightArrow | mouse right             |
-| `⌘X+H`    |  scroll left | mouse scorll left              |
-| `⌘X+J`    |  scroll down | mouse scroll down              |
-| `⌘X+K`    |  scroll UpArrow    | mouse scroll up                |
-| `⌘X+L`    |  scroll RightArrow | mouse scroll right             |
-| `X+Z`    | slowly mouse move  | mouse slowly        |
-| `X+7`    | move to Upleft        | mouse left              |
-| `X+8`    | move to UpRight       | mouse down              |
-| `X+9`    | move to DownLeft      | mouse up                |
-| `X+0`    | move to DownRight     | mouse right             |
-| `X+O`    | change screen focus         | change screen focus            |
-| `X+I`    | MouseMiddle           | mouse middle button click            |
-| `X+U`    | MouseLeft     | mouse left button click           |
-| `X+P`    | MouseRight      | mouse right button click |
+1.下载并安装 Karabiner Elements，按照安装向导提示完成安装并赋予所需权限。
 
-### Deletion
+2. git clone 本项目，到项目目录下，运行以下命令
+> make install
 
-| Origin    | Maps to                            | Comment             |
-| --------- | ---------------------------------- | ------------------- |
-| `N`       | `⌥⌫`  Option + ForwardDelete       | Delete a word ahead |
-| `M`       | `⌫` ForwardDelete                  | Delete a char ahead |
-| `,`       | `⌦` Delete                         | Delete a char after |
-| `.`       | `⌥⌦` Option + Delete               | Delete a word after |
-| `⌘M`,`⌘N` | `⌘⌥⌫` Command+Option+ForwardDelete | Delete to line head |
+3. 打开Karabiner-Elements，切至第三选项卡ComplexModification，点击左下方按钮 Add Rules按需启用Capslock预置规则即可
 
-### Window Control
 
-| Origin           | Maps to                 | Comment                                  |
-| ---------------- | ----------------------- | ---------------------------------------- |
-| `⇥` Tab          | `⌘⇥` Command+Tab        | Switch Window                            |
-| `⌘⇥` Command+Tab | `⌘⇧⇥` Command+Shift+Tab | Switch Window Reversely                  |
-| `Q`              | `⌘Q`                    | Close Window                             |
-| `W`              | `⌘W`                    | Close Tab                                |
-| `S`              | `⌃⇥`  Ctrl+Tab          | Switch Tab                               |
-| `D`              | `⌃⇧⇥` Ctrl+Shift+Tab    | Swtich Tab Reversely                     |
-| `v+H`            | `←` LeftArrow           | switch prev desktop     |
-| `v+h`            | `↓` DownArrow           | show desktops           |
-| `v+K`            | `↑` UpArrow             | expose all              |
-| `v+L`            | `→` RightArrow          | switch next desktop     |
-| `v+u`            | `⌘^F`                   | full screen                   |
-| `v+p`            | `⌘m`                    | minimum                   |
+
+## 功能
+
+Capslock以ANSI布局键盘为蓝本，对Capslock之外的 所有按键 进行了功能定制与修饰，主要分为10大类功能。
+
+
+
+
+
+> [**控制平面**](https://github.com/Vonng/Capslock/blob/master/控制平面) 由左侧修饰键的排列组合所定义：根据 ⌘⌥⌃⇧的状态，最多有16个额外的控制平面。上图为0号控制平面布局。
+
+| 类目                                                         | 颜色   | 说明                                                         |
+| ------------------------------------------------------------ | ------ | ------------------------------------------------------------ |
+| [基础功能](https://github.com/Vonng/Capslock/blob/master/README_ZH.md#基础功能) | 蓝     | 单击Capslock发送**Esc**，按住Capslock启用✱功能。✱Esc切换大小写锁，✱空格切换输入法。 |
+| [导航功能](https://github.com/Vonng/Capslock/blob/master/README_ZH.md#导航功能) | 粉     | VI式导航，结合⌃⌥⌘⇧启用多种功能：光标移动，词句选择，窗口管理，鼠标移动等等… |
+| [删除功能](https://github.com/Vonng/Capslock/blob/master/README_ZH.md#删除功能) | 棕     | 快速执行字/词/句/行/页的删除操作，手无需离开核心区。         |
+| [鼠标键](https://github.com/Vonng/Capslock/blob/master/README_ZH.md#鼠标键) | 小键盘 | 将小键盘映射为一个功能完整的鼠标。                           |
+| [窗口管理](https://github.com/Vonng/Capslock/blob/master/README_ZH.md#窗口管理) | 淡蓝   | 切换或关闭桌面/应用/窗口/选项卡，睡眠/锁屏/熄屏/登出。集成外部窗口管理应用。 |
+| [应用捷径](https://github.com/Vonng/Capslock/blob/master/README_ZH.md#应用捷径) | 黄     | 启动或切换至常用应用，预置MacOS高频应用与流行的开发者工具。  |
+| [终端控制](https://github.com/Vonng/Capslock/blob/master/README_ZH.md#终端控制) | 绿     | 发送常用终端控制信号，IDE运行命令，Vim/Tmux的元按键。        |
+| [文本剪贴](https://github.com/Vonng/Capslock/blob/master/README_ZH.md#文本剪贴) | 紫     | 将数字键用做10个额外的文本剪贴板：⌘n复制，n粘贴。            |
+| [上档变换](https://github.com/Vonng/Capslock/blob/master/README_ZH.md#上档变换) | 橙     | 将一些键映射至常用高频字符。                                 |
+| [功能控制](https://github.com/Vonng/Capslock/blob/master/README_ZH.md#功能控制) | 青     | 将F1-F2转义回原本的功能，截屏录屏，音量灯光的精密控制。      |
+
+### 基础功能
+
+| 按键   | 映射为     | 说明                                       |
+| ------ | ---------- | ------------------------------------------ |
+| ⇪ 点击 | ⎋ Escape   | 单击Capslock发送ESC                        |
+| ⇪ 按住 | ✱ Hyper    | 按住Capslock启用Hyper                      |
+| ✱⎋     | ⇪ Capslock | **单击**ESC切换大写锁定                    |
+| ✱␣     | ⌃␣         | **单击**空格切换输入法，+⌘时打开表情符号页 |
+
+注意，✱ 在实现上被定义为同时按下所有的右侧⌘⌥⌃⇧修饰符，这样设计的主要原因是将快捷键透传到外部应用。（如Alfred，Moom等）
+
+后续介绍如果没有特殊说明，均假定 ✱ Hyper 处于按下状态。
+
+------
+
+### 导航功能
+
+- `H`, `J`, `K`, `L`, `U`, `I`, `O`, `P` 被用作**基本导航键**，分别映射为←↓↑→⇞↖↘⇟（左下上右/PgUp/Home/End/PgDn），位于图中粉色区域。
+- 基本导航键配合**左侧修饰键**可启用多种导航功能，默认配置了9个**控制平面**。
+- 按住 ⌘ Command，效果为**文本选择**，额外按住⌥ Option 时，选择单位会变为**前后词语**与**上下3行**。
+- 按住⇧ Shift 的效果为**应用/窗口/标签切换**，按住⌃ Control 的效果为**桌面管理**。
+- 按住 ⌥ Option 效果为🖱️**鼠标移动**， 额外按下⇧Shift将**移速翻倍** ⏫。 (`U`, `I`, `O`, `P` 映射为鼠标左击，右击，后退，前进)。
+- 按住⇧⌥将导航键变为 🖲️ **鼠标滚轮**，⇧⌘**移速翻倍** 。其中HJKL为正常滚动，UIOP自然滚动（反向）。
+
+| **功能** | **移动** | **选择** | **快速选择** | **窗口管理** | **桌面管理** | 🖱️    | **🖱️⏫** | 🖲️    | 🖲️⏫   |
+| -------- | -------- | -------- | ------------ | ------------ | ------------ | ---- | ------ | ---- | ---- |
+| 键\修饰  | ✱        | ⌘        | ⌘⌥           | ⇧            | ⌃            | ⌥    | ⇧⌃     | ⇧⌥   | ⇧⌘   |
+| H        | ⬅️        | 左选一字 | 左选一词     | 先前Tab      | 上个桌面     | ⬅️    | ⬅️⏫     | ⬅️    | ⬅️⏫   |
+| J        | ⬇️        | 下选一行 | 下选三行     | 切换应用     | 聚焦窗口     | ⬇️    | ⬇️⏫     | ⬇️    | ⬇️⏫   |
+| K        | ⬆️        | 上选一行 | 上选三行     | 先前应用     | 暴露所有     | ⬆️    | ⬆️⏫     | ⬆️    | ⬆️⏫   |
+| L        | ➡️        | 右选一字 | 右选一词     | 切换Tab      | 下个桌面     | ➡️    | ➡️⏫     | ➡️    | ➡️⏫   |
+| U        | PgUp     | 选至上页 | 选至上页     | 缩小         | 全屏         | 🖱️L   | 🖱️L     | ➡️    | ➡️    |
+| I        | Home     | 选至行首 | 尾至行首     | 上个窗口     | 隐藏窗口     | 🖱️R   | 🖱️R     | ⬆️    | ⬆️⏫   |
+| O        | End      | 选至行尾 | 首至行尾     | 切换窗口     | 隐藏所有     | 🖱️B   | 🖱️B     | ⬇️    | ⬇️⏫   |
+| P        | PgDn     | 选至下页 | 选至下页     | 放大         | 启动菜单     | 🖱️F   | 🖱️F     | ⬅️    | ⬅️⏫   |
+
+#### 方向键导航
+
+- 方向键 ←↓↑→ 用于模拟 🖱️**鼠标移动**。额外按住 ⌥ Option ⏬ **减速**，额外按住 ⌘ Command ⏫ **加速**。
+- 按住 ⇧Shift 切换至 🖲️**滚轮移动**。额外按住 ⌥ Option ⏬ **减速**，额外按住⌘ Command ⏫ **加速**。
+- 按下↩回车键为鼠标左键单击，配合⌘⌥⌃⇧使用时会相应转化为鼠标的右键，中键，后退键，前进键。
+
+| **功能** | 🖱️         | 🖱️⏬     | 🖱️⏫     | 🖲️       | 🖲️⏬     | 🖲️⏫     |
+| -------- | --------- | ------ | ------ | ------- | ------ | ------ |
+| 键\修饰  | ✱         | ⌥      | ⌘      | ⇧       | ⇧⌥     | ⇧⌘     |
+| ←↓↑→     | 移速=1600 | 移速÷2 | 移速×2 | 滚速=32 | 滚速÷2 | 滚速×2 |
+| ↩        | 🖱️L        | 🖱️M     | 🖱️R     | 🖱️L      | 🖱️B     | 🖱️F     |
+
+### 删除功能
+
+`N` `M` `,` `.` 用做删除键。删除操作位于导航键`HJKL`下方，用于快速执行文本删除。
+
+| 键\修饰 | ✱        | ⌘            | ⌥        |
+| ------- | -------- | ------------ | -------- |
+| N       | 前删一词 | 删至行首     | 整行删除 |
+| M       | 前删一字 | 前删一词     | 将行下移 |
+| ,       | 后删一字 | 后删一词     | 将行上移 |
+| .       | 后删一词 | 删至行尾     | 整行删除 |
+| ⌫       | 删除文件 | 永久删除文件 |          |
+
+### 鼠标键
+
+- 1-9号数字控制🖱️ **鼠标移动**方向，额外按住 ⌥ Option 时 ⏬**减速**，按住⌘ Command 时 ⏫**加速**。
+- 按住⇧ Shift 切换为🖲️ **滚轮滚轮**，在此模式下，额外按住 ⌥ Option 时 ⏬ **减速**，额外按住⌘ Command ⏫ **加速**。
+- 第一行（`numlock`, `=`, `/`, `*`）转换为鼠标滚动操作，右下侧其余按键（`0`, `.`, `⌤`, `+`, `-`）转换为鼠标的5个按键.
+
+| ⇭ 🖲️⬅️ | = 🖲️⬇️ | / 🖲️⬆️ | * 🖲️➡️ |
+| ---- | ---- | ---- | ---- |
+| 7🖱️ ↖️ | 8 🖱️⬆️ | 9 🖱️↗️ | - 🖱️B |
+| 4🖱️ ⬅️ | 5🖱️   | 6 🖱️➡️ | + 🖱️F |
+| 1🖱️↙️  | 2 🖱️⬇️ | 3 🖱️↘️ |      |
+| 0 🖱️L |      | . 🖱️M | ⌤ 🖱️R |
+
+### 窗口管理
+
+- `Tab`, `Q`, `W`, `A`, `s`用于窗口管理，关注应用/窗口/标签页/桌面的切换，关闭等功能。位于图中天蓝色区域。
+- 窗口管理功能（调整大小布局）是通过外部应用完成的，例如[Moom](https://manytricks.com/moom/)，[Magnet](https://apps.apple.com/us/app/magnet/id441258766)，[Slate](https://github.com/jigish/slate)等，您需要为其绑定⌃⌥⇧⌘A作为触发快捷键。
+
+| 键\修饰 | ✱            | ⌘          | ⌥              | ⌃              | ⇧       |
+| ------- | ------------ | ---------- | -------------- | -------------- | ------- |
+| `⇥` Tab | 上个应用     | 下个应用   | 下个桌面       |                | 切换Tab |
+| `Q`     | 关闭应用     | 关闭应用   |                | 锁屏           | 注销    |
+| `W`     | 关闭窗口     | 关闭窗口   |                | 熄屏           | 睡眠    |
+| `A`     | **窗口管理** | 暴露窗口   | 显示桌面       | LaunchPad      |         |
+| `S`     | 下个标签页   | 上个标签页 | 上个同应用窗口 | 下个同应用窗口 |         |
+
+### 应用捷径
+
+- `E` `R` `T` `Y` `F` `G` 被用作默认的应用捷径热键，位于图中黄色区域。
+- 高频系统应用与流行的开发者工具已经被默认分配至3个控制平面中 ✱/⌘/⌥。
+- 您可以通过修改配置文件自行定制喜欢的应用。
+
+| 键\修饰 | ✱                   | ⌘         | ⌥           | ……   |
+| ------- | ------------------- | --------- | ----------- | ---- |
+| E       | Safari              | Finder    | Mail        |      |
+| R       | iTerm2              | Preview   | Terminal    |      |
+| T       | Visual Studio Code  | Typora    | Note        |      |
+| Y       | Siri                | Karabiner | Amphetamine |      |
+| F       | Alfred (bind ⌃⌥⇧⌘F) | Dash      | Dictionary  |      |
+| G       | Intellij IDEA       | Chrome    | Calender    |      |
+
+### 终端控制
+
+`D`, `Z`, `X`, `C`, `V`, `B` 用于终端控制，发送信号与IDE命令，位于图中绿色区域。
+
+| 键\修饰 | ✱                                          | ⌘                   |
+| ------- | ------------------------------------------ | ------------------- |
+| D       | ⌃D (EOF)                                   | 定义 (压感点击)     |
+| Z       | ⌃Z (SIGTSTP)                               | F5 (VS Code Debug)  |
+| X       | ⌃R (IDE Run)                               | ⌃F5 (VS Code Run)   |
+| C       | ⌃C (SIGINT)                                | ⇧F5（VS Code Stop） |
+| V       | ⌃V (Vim Prefix)                            |                     |
+| B       | ⌃B ([Tmux](http://tmux.github.io/) Prefix) |                     |
+
+### 文本剪贴
+
+- 数字键 1, 2, …, 9, 0 用作剪贴板，按下 ⌘ Command +数字键**拷贝**，按下数字键粘贴。位于图中紫色区域。
+
+| 键\修饰 | ✱             | ⌘             |
+| ------- | ------------- | ------------- |
+| 1       | 从剪贴板1粘贴 | 拷贝至剪贴板1 |
+| 2       | 从剪贴板2粘贴 | 拷贝至剪贴板2 |
+| ……      | ……            | ……            |
+| 0       | 从剪贴板0粘贴 | 拷贝至剪贴板0 |
+
+### 上档变换
+
+- 朴素的字符映射，将一些字符转换为另一些常用字符，便于输入，位于图中橙色区域。
+- 部分字符会针对开发者有特殊优化映射，例如`;'`会被映射为`:=`，或`!=`（⌘），便于输入比较与赋值表达式。
+
+| 键\修饰 | ✱    | ⌘        | ⌥    |
+| ------- | ---- | -------- | ---- |
+| `-`     | `_`  | 页面缩小 |      |
+| `=`     | `+`  | 页面放大 |      |
+| `[`     | `(`  | `{`      | `<`  |
+| `]`     | `)`  | `}`      | `>`  |
+| `;`     | `!`  | `:`      |      |
+| `'`     | `=`  | `=`      |      |
+| `/`     | ⌘/   |          |      |
+| `\`     | ⌘/   |          |      |
+
+### 功能控制
+
+- 将 F1,F2,..., F12等用作标准功能键，按下✱将其转义回原来的功能，位于图中青色区域。
+
+- ⌘Command + F1/F2/F3 为切换桌面快捷键，但您必须先在启用系统相关快捷键：
+
+  **系统设置** → **键盘** → **快捷键** → **调度中心** → 启用桌面切换快捷键。
+
+- 如果您使用带TouchBar的Macbook键盘，可以将TouchBar修改回标准功能键组。
+
+  **Karabiner-Elements** → **Function Keys** → **Use all F1, F2, etc. keys as standard function keys**
+
+| 键\修饰  | ✱                                  | ⌘    | 说明                         |
+| -------- | ---------------------------------- | ---- | ---------------------------- |
+| `        | ⌃⇧⌘4                               | ⇧⌘4  | 区域选择截图（+⌘保存至桌面） |
+| F1       | display_brightness_decrement \| ⌃1 | ⌃1   | 调低屏幕亮度/桌面1           |
+| F2       | display_brightness_increment \| ⌃2 | ⌃2   | 调高屏幕亮度/桌面2           |
+| F3       | ⌃↑ \| ⌃3                           | ⌃3   | 暴露窗口/桌面3               |
+| F4       | Launchpad                          |      | 启动面板                     |
+| F5       | illumination_decrement             |      | 调暗键盘灯                   |
+| F6       | illumination_increment             |      | 调亮键盘灯                   |
+| F7       | rewind                             |      | 上一首音乐                   |
+| F8       | play_or_pause                      |      | 播放 / 暂停                  |
+| F9       | fastforward                        |      | 下一首音乐                   |
+| F10      | mute                               |      | 静音                         |
+| F11      | volume_decrement                   |      | 调低音量                     |
+| F12      | volume_increment                   |      | 调高音量                     |
+| F13      | ⌃⇧⌘3                               | ⇧⌘3  | 全屏截图｜（+⌘保存至桌面）   |
+| F14      | ⇧⌘5                                | ⇧⌘6  | 截图菜单｜（+⌘触控栏截图）   |
+| F15      | play_or_pause                      |      | 播放 / 暂停                  |
+| Insert   | ⇧⌥ display_brightness_increment    |      | 平滑调高亮度                 |
+| Delete ⌦ | ⇧⌥ display_brightness_decrement    |      | 平滑调低亮度                 |
+| Home ↖   | ⇧⌥ illumination_increment          |      | 平滑调亮键盘灯               |
+| End ↘    | ⇧⌥ illumination_decrement          |      | 平滑调暗键盘灯               |
+| PgUp ⇞   | ⇧⌥ volume_increment                |      | 平滑调高音量                 |
+| PgDn ⇟   | ⇧⌥ volume_decrement                |      | 平滑调低音量                 |
+
+## 参考
+
+### 符号释义
+
+| Glyph | Name          | Glyph | Name                   |
+| ----- | ------------- | ----- | ---------------------- |
+| ⇪     | Capslock      | ✱     | Hyper                  |
+| ⎋     | Escape        | ␣     | Space                  |
+| ⌘     | Command (Mac) | ⎇     | Alter (Win)            |
+| ⌥     | Option (Mac)  | ⊞     | Win (Win)              |
+| ⌃     | Control       | ⇧     | Shift                  |
+| ↩     | Return        | ⌤     | Enter                  |
+| ←↓↑→  | Arrow Cursor  | ↖↘    | Home/End               |
+| ⇥⇤    | Tab           | ⌫⌦    | Delete / ForwardDelete |
+| ⇭     | Numlock       | ⏫⏬    | Fast / Slow            |
+| 🖱️L    | 左键单击      | 🖱️B    | 鼠标后退               |
+| 🖱️R    | 右键单击      | 🖱️F    | 鼠标前进               |
+| 🖱️M    | 中键单击      | 🖲️     | 鼠标滚轮               |
+
+### 控制平面
+
+
+
+| 面    | 修饰键 | 面   | 修饰键 | 面   | 修饰键 |
+| ----- | ------ | ---- | ------ | ---- | ------ |
+| **0** | ✱      | 3    | ✱⌘⌥    | 7    | ✱⌘⌥⌃   |
+| 1     | ✱⌘     | 5    | ✱⌘⌃    | 11   | ✱⌘⌥⇧   |
+| 2     | ✱⌥     | 6    | ✱⌥⌃    | 13   | ✱⌘⌃⇧   |
+| 4     | ✱⌃     | 9    | ✱⌘⇧    | 14   | ✱⌥⌃⇧   |
+| 8     | ✱⇧     | 10   | ✱⌥⇧    | 15   | ✱⌘⌥⌃⇧  |
+|       |        | 12   | ✱⌃⇧    |      |        |
+
+
+
+
+
+
+
+
+
+### 
 
 ### Bash Control
 
@@ -177,192 +292,16 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | ------ | ----------------------- | ----------------------------------------------- |
 | `e`    | Open alfred             | Open alfred                                  |
 | `⌘E`   | Open chrome             | Open Edge                             |
-| `R`    | Open obsidian           | open obsidian                           |
+| `R`    | Open logseq             | open logseq                          |
 | `⌘R`   | Open Preview            | Switch to opened picture, pdf, etc...           |
-| `T`    | Open ticktick           | open todoist                |
+| `T`    | Open todoist            | open todoist                |
 | `y`    | Open outlook            |open outlook  |
-| `f`    | Open outlook            |open Find Any File.app  |
-| `⌘D`   | Open Dictionary         | Find words                                      |
+| `f`    | Open qspace             |open qspace                               |
+| `⌘f`    | Open qspace            |open Find Any File.app  |
+| `⌘D`   | Open Dictionary         | Find words   in bob                                   |
 | `⌘o`    | Open onedrive          | open ondrive                             |
 | `G`    | Open weCom              | Open weCom                                     |
 | `⌘G`   | Open weChat             | open weChat                              |
-### Functional
-
-- Use F1,…F12 as standard functional keys, while hold hyper to turn them back.
-
-- If you are using RMBP with Bar, consider changing your bar back to function keys with 
-
-  `Karabiner -> Function Keys -> Use all F1, F2, etc. keys as standard function keys  `
-
-| Origin            | Maps to              | Comment                          |
-| ----------------- | -------------------- | -------------------------------- |
-| `F1`              | `BrightnessDown`     |                                  |
-| `F2`              | `BrightnessUp`       |                                  |
-| `F3`              | `ExposeAll`          |                                  |
-| `F4`              | `LaunchPad`          |                                  |
-| `F5`              | `KeyboardLightDown`  |                                  |
-| `F6`              | `KeyboardLightUp`    |                                  |
-| `F7`              | `MusicPrev`          |                                  |
-| `F8`              | `MusicPlay`          |                                  |
-| `F9`              | `MusicNext`          |                                  |
-| `F10`             | `Mute`               |                                  |
-| `F11`             | `VolumeDown`         |                                  |
-| `F12`             | `VolumeUp`           |                                  |
-| `F13` PrintScreen | `MusicPrev`          |                                  |
-| `F14` ScrollLock  | `MusicNext`          |                                  |
-| `F15` Pause       | `MusicPlay`          | Just as it shows                 |
-| `Insert`          | `⌥BrightnessUp`      | Fine grained brightness up       |
-| `Delete`          | `⌥BrightnessDown`    | Fine grained brightness down     |
-| `Home`            | `⌥KeyboardLightUp`   | Fine grained keyboard light up   |
-| `End`             | `⌥KeyboardLightDown` | Fine grained keyboard light down |
-| `PgUp`            | `⌥VolumeUp`          | Fine grained volume up           |
-| `PgDn`            | `⌥VolumeDown`        | Fine grained volume down         |
-
-### Shifter
-
-- A more convient shift for most case
-- Semicolon`;` and Quote  `'` have some special treatment, makes input `!=` and `:=`  easier
-
-| Origin             | Maps to | Comment                  |
-| ------------------ | ------- | ------------------------ |
-| `1`                | `!`     | Exclamation              |
-| `2`                | `@`     | At                       |
-| `3`                | `#`     | Sharp                    |
-| `4`                | `$`     | Dollar                   |
-| `5`                | `%`     | Percent                  |
-| `6`                | `^`     | Caret                    |
-| `7`                | `&`     | Ampersand                |
-| `8`                | `*`     | Star                     |
-| `9`                | `(`     | Left Round Bracket       |
-| `0`                | `)`     | Right Round Bracket      |
-| `-` Minus          | `_`     | Hyphen                   |
-| `=` Equal          | `+`     | Plus                     |
-| `[` Left Bracket   | `(`     | Left Round Bracket `⇧9`  |
-| `⌥K`    | `⌥←` go back    |  go back         |
-| `⌥L`    | `⌥→` go foward | go foward       || `;` Semicolon      | `!`     | Exclamation              |
-| `'` Single Quote   | `=`     | EqualSign                |
-| `⌘;` Semicolon     | `!`     | Colon                    |
-| `⌘'` Single Quote  | `=`     | EqualSign                |
-
-### Misc
-
-| Origin                 | Maps to             | Comment                                        |
-| ---------------------- | ------------------- | ---------------------------------------------- |
-| `⎋` Escape             | `⇪`  CapsLock       | Bug: Difficult to turn capslock off after emit |
-| `~` BackQuote          | `⌃⇧⌘4`              | macOS Area Screenshot to Clipboard             |
-| `⌘~` Command+BackQuote | `⌃⇧4`               | macOS Area Screenshot to Desktop File          |
-| `⌫` Backspace          | `⌘⌫`                | macOS Delete File                              |
-| `/` Slash              | `⌘/` Command+Slash  | Comment/Uncomment in many IDE                  |
-| `\` Backslash          | `⌘/` Command+Slash  | Comment/Uncomment in many IDE                  |
-| `␢` Spacebar           | `⌃␢`  Ctrl+Spacebar | Switch Input Source                            |
-
-
-
-## Symbol Reference
-
-### Modifiers: Mac
-
-| Sym  | Key     |
-| ---- | ------- |
-| ✱    | Hyper   |
-| ⌃    | Control |
-| ⌥    | Option  |
-| ⇧    | Shift   |
-| ⌘    | Command |
-
-### Modifiers: ⊞Windows
-
-| Sym  | Key     |
-| ---- | ------- |
-| ✱    | Hyper   |
-| ⌃    | Control |
-| ⊞    | Windows |
-| ⇧    | Shift   |
-| ⎇    | Alter   |
-
-### Normal Keys
-
-| GLYPH   | NAME                                   |
-| ------- | -------------------------------------- |
-|        | Apple                                  |
-| ⌘       | Command, Cmd, Clover, (formerly) Apple |
-| ⌃       | Control, Ctl, Ctrl                     |
-| ⌥       | Option, Opt, (Windows) Alt             |
-| ⎇       | Alt                                    |
-| ⇧       | Shift                                  |
-| ⇪       | Caps lock                              |
-| ⏏       | Eject                                  |
-| ↩, ↵, ⏎ | Return, Carriage Return                |
-| ⌤       | Enter                                  |
-| ⌫       | Delete, Backspace                      |
-| ⌦       | Forward Delete                         |
-| ⎋       | Escape, Esc                            |
-| →       | Right arrow                            |
-| ←       | Left arrow                             |
-| ↑       | Up arrow                               |
-| ↓       | Down arrow                             |
-| ⇞       | Page Up, PgUp                          |
-| ⇟       | Page Down, PgDn                        |
-| ↖       | Home                                   |
-| ↘       | End                                    |
-| ⌧       | Clear                                  |
-| ⇥       | Tab, Tab Right, Horizontal Tab         |
-| ⇤       | Shift Tab, Tab Left, Back-tab          |
-| ␢       | Space, Blank                           |
-| ␣       | Space, Blank                           |
-| ❘⃝      | Power                                  |
-| ⇭       | Num lock                               |
-| ?⃝      | Help                                   |
-|        | Context menu                           |
-
-
-
-
-
-## FAQ
-
-- Q： Why using ✱ as symbol of hyper key？
-
-  A：Cause asterisk have the ascii code 42, which is the answer to life, the universe, and everything!  while itself has meaning 'star'. ✱ (Heavy-Asterisk) is a pretty version of `*` (Asterisk). Actually I would choose ☯  if Github could render it properly...
-
-- Q：Why Linux support is missing？
-
-  A：because I choose Mac, and use Linux through terminal.
-
-- Q:  Why there is some different key bindings between Mac version and Win version?
-
-  A:   I don't use windows anymore,  Win version is no longer maintained. Welcome if you can fix that.
-
-- Q:  Why there's an old Mac version?
-
-  A:  Apple is really capricious. macOS Sierra changes it's kernel architecture, so the old version karabiner is incompatible with macOS after 10.12. But now there's a new version of karabiner named karabiner-elements. While karabiner-elements use a new JSON-format conf instead of old XML-format. Please using the new version.
-
-  ​
-
-
-
-## About
-
-Author：Vonng (fengruohang@outlook.com)
-
-License：WTFPL
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/WTFPL_logo.svg/140px-WTFPL_logo.svg.png)
-
-```
-Do What The Fuck you want to Public License
-
-Version 1.0
-Copyright (C) 2018 Feng Ruohang (Vonng).
-Everyone is permitted to copy and distribute verbatim copies
-of this license document, but changing it is not allowed.
-
-Ok, the purpose of this license is simple
-and you just
-
-DO WHAT THE FUCK YOU WANT TO.
-```
-
 
 
 
