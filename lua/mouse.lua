@@ -1,8 +1,3 @@
-
-
-q
-
-
 -- Move Mouse to center of next Monitor
 hs.urlevent.bind("ChangeMouseFocus", function(eventName, params)
     local screen = hs.mouse.getCurrentScreen()

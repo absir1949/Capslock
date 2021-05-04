@@ -38,7 +38,7 @@
             ],
             "to_if_alone": [
               {
-                "key_code": "escape"
+                "key_code": "caps_lock"
               }
             ]
           },
@@ -238,7 +238,7 @@
             "to": [
               {
                 "mouse_key": {
-                  "x": -1600
+                  "x": -1000
                 }
               }
             ]
@@ -262,7 +262,7 @@
             "to": [
               {
                 "mouse_key": {
-                  "x": -3200
+                  "x": -2000
                 }
               }
             ]
@@ -462,7 +462,7 @@
             "to": [
               {
                 "mouse_key": {
-                  "y": 1600
+                  "y": 1000
                 }
               }
             ]
@@ -486,7 +486,7 @@
             "to": [
               {
                 "mouse_key": {
-                  "y": 3200
+                  "y": 1000
                 }
               }
             ]
@@ -687,7 +687,7 @@
             "to": [
               {
                 "mouse_key": {
-                  "y": -1600
+                  "y": -1000
                 }
               }
             ]
@@ -711,7 +711,7 @@
             "to": [
               {
                 "mouse_key": {
-                  "y": -3200
+                  "y": -1000
                 }
               }
             ]
@@ -1314,7 +1314,7 @@
             ]
           },
           {
-            "description": "option + i = mouse right click",
+            "description": "option + i = mouse middle click",
             "type": "basic",
             "from": {
               "key_code": "i",
@@ -1330,7 +1330,7 @@
             },
             "to": [
               {
-                "pointing_button": "button2"
+                "pointing_button": "button3"
               }
             ]
           },
@@ -1352,7 +1352,7 @@
             },
             "to": [
               {
-                "pointing_button": "button2"
+                "pointing_button": "button3"
               }
             ]
           },
@@ -1525,7 +1525,7 @@
             ]
           },
           {
-            "description": "option + o = mouse backward",
+            "description": "option + o = mouse change screen focus",
             "type": "basic",
             "from": {
               "key_code": "o",
@@ -1541,12 +1541,12 @@
             },
             "to": [
               {
-                "pointing_button": "button4"
+                "shell_command": "open -g 'hammerspoon://ChangeMouseFocus'"
               }
             ]
           },
           {
-            "description": "shift + option + o = mouse backward",
+            "description": "shift + option + o = mouse change screen focus",
             "type": "basic",
             "from": {
               "key_code": "o",
@@ -1563,7 +1563,7 @@
             },
             "to": [
               {
-                "pointing_button": "button4"
+                "shell_command": "open -g 'hammerspoon://ChangeMouseFocus'"
               }
             ]
           },
@@ -1730,7 +1730,7 @@
             ]
           },
           {
-            "description": "option + p = mouse forward",
+            "description": "option + p = mouse right button click",
             "type": "basic",
             "from": {
               "key_code": "p",
@@ -1746,12 +1746,12 @@
             },
             "to": [
               {
-                "pointing_button": "button5"
+                "pointing_button": "button2"
               }
             ]
           },
           {
-            "description": "shift + option + p = mouse forward",
+            "description": "shift + option + p = mouse right button click",
             "type": "basic",
             "from": {
               "key_code": "p",
@@ -1768,7 +1768,7 @@
             },
             "to": [
               {
-                "pointing_button": "button5"
+                "pointing_button": "button2"
               }
             ]
           },
@@ -4820,7 +4820,7 @@
             ]
           },
           {
-            "description": "option + e = iterm2",
+            "description": "option + e = Termius",
             "type": "basic",
             "from": {
               "key_code": "e",
@@ -4836,7 +4836,7 @@
             },
             "to": [
               {
-                "shell_command": "open -a 'iTerm.app'"
+                "shell_command": "open -a 'Termius.app'"
               }
             ]
           },
@@ -4864,7 +4864,7 @@
             ]
           },
           {
-            "description": "command + r = preview",
+            "description": "command + r = tapd",
             "type": "basic",
             "from": {
               "key_code": "r",
@@ -4880,7 +4880,7 @@
             },
             "to": [
               {
-                "shell_command": "open -a Preview"
+                "shell_command": "open -a '/Users/ab/Applications/Edge Apps.localized/TAPD.app'"
               }
             ]
           },
@@ -4921,7 +4921,7 @@
             },
             "to": [
               {
-                "shell_command": "open -a 'Logseq'"
+                "shell_command": "open -a '/Users/ab/Applications/Edge Apps.localized/Logseq.app'"
               }
             ]
           },
@@ -4968,7 +4968,7 @@
             ]
           },
           {
-            "description": "t = todoist",
+            "description": "t = mstodo",
             "type": "basic",
             "from": {
               "key_code": "t",
@@ -4983,7 +4983,7 @@
             },
             "to": [
               {
-                "shell_command": "open -a 'todoist'"
+                "shell_command": "open -a 'Microsoft To Do.app'"
               }
             ]
           },
@@ -5029,7 +5029,7 @@
             ]
           },
           {
-            "description": "command + f = Find Any File.app",
+            "description": "command + f = EasyFind.app",
             "type": "basic",
             "from": {
               "key_code": "f",
@@ -5045,7 +5045,7 @@
             },
             "to": [
               {
-                "shell_command": "open -a 'Find Any File.app'"
+                "shell_command": "open -a 'EasyFind.app'"
               }
             ]
           },
@@ -5091,7 +5091,7 @@
             ]
           },
           {
-            "description": "command + g = Chrome",
+            "description": "command + g = 企业微信.app",
             "type": "basic",
             "from": {
               "key_code": "g",
@@ -5107,7 +5107,7 @@
             },
             "to": [
               {
-                "shell_command": "open -a 'Google Chrome'"
+                "shell_command": "open -a '企业微信.app'"
               }
             ]
           },
